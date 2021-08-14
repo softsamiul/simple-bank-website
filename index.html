@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Bank Website</title>
+    <!-- Tailwind CSS -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="mt-14">
+        <h1 class="site-title text-5xl text-center">Welcome To <span class="text-indigo-700 font-bold">Programmer's Bank</span></h1>
+    </header>
+    <main>
+        <section id="login-section" class="bg-indigo-700 text-white mx-auto w-4/5 mt-12 p-12 rounded-tr-full rounded-bl-3xl">
+            <h2 class="login-section-title text-3xl mb-3">Please login here!</h2>
+            <div class="text-black">
+                <input id="user-email" class="block  border-2 border-gray-200 text-base rounded p-2 w-3/4 mb-2" type="email" name="" id="" placeholder="Enter your email here">
+                <input id="user-password" class="block border-2 border-gray-200 text-base rounded p-2 w-3/4 mb-2" type="password" name="" id="" placeholder="Enter your password here">
+                <button id="login-btn" class="bg-indigo-400 px-6 py-2 text-lg text-white font-medium rounded">Login</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Script -->
+    <script src="js/login.js"></script>
+</body>
+
+</html>

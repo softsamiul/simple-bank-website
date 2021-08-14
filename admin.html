@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <!-- Tailwind CSS -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="mt-14">
+        <h1 class="site-title text-5xl text-center">Welcome To <span class="text-indigo-700 font-bold">Programmer's Bank</span></h1>
+    </header>
+    <main>
+        <!-- Account Statictis -->
+        <section class="mt-12 w-4/5 mx-auto">
+            <div class="grid grid-cols-3 gap-4 ">
+                <!-- Deposit -->
+                <div class="bg-blue-500 p-8 text-white rounded rounded-tr-3xl">
+                    <h4 class="deposit text-3xl">Deposit</h4>
+                    <h2 class="ballance text-5xl">$<span id="deposit-total">000</span> </h2>
+                </div>
+                <!-- Withdraw -->
+                <div class="bg-indigo-500 p-8 text-white rounded rounded-tr-3xl">
+                    <h4 class="deposit text-3xl">Withdraw</h4>
+                    <h2 class="ballance text-5xl">$<span id="withdraw-total">000</span></h2>
+                </div>
+                <!-- Current Ballance -->
+                <div class="bg-green-400 p-8 text-white rounded rounded-tr-3xl">
+                    <h4 class="deposit text-3xl">Balance</h4>
+                    <h2 class="ballance text-5xl">$<span id="total-balance">1290</span></h2>
+                </div>
+            </div>
+        </section>
+        <!-- Deposit & Withdraw section -->
+        <section class="mt-8 w-4/5 mx-auto">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="text-white bg-indigo-200 p-8 rounded">
+                    <h3 class="text-3xl mb-4">Deposit here</h3>
+                    <div>
+                        <input id="deposit-amount" class="block text-black border-2 border-gray-200 text-base rounded p-2 w-3/4 mb-2" type="text" name="" id="" placeholder="Enter your amount here">
+                        <button id="deposit-btn" class="bg-indigo-400 px-6 py-2 text-lg text-white font-medium rounded">Deposit</button>
+                    </div>
+                </div>
+                <div class="text-white bg-pink-200 p-8 rounded">
+                    <h3 class="text-3xl mb-4">Withdraw here</h3>
+                    <div>
+                        <input id="withdraw-amount" class="block text-black  border-2 border-gray-200 text-base rounded p-2 w-3/4 mb-2" type="text" name="" id="" placeholder="Enter your amount here">
+                        <button id="withdraw-btn" class="bg-indigo-400 px-6 py-2 text-lg text-white font-medium rounded">Withdraw</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- script -->
+    <script src="js/banking.js"></script>
+</body>
+
+</html>
